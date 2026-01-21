@@ -1,0 +1,13 @@
+Bit-wise operators
+
+(1)And
+(2)or
+(3)nor
+(4)xor
+(5)Left-shift
+(6)Risht Shift
+
+Q1. Count the no. of digits of a number?
+Q2. Reverce a no?
+Q3. Check a palidronic number?
+Q4. Check a armstrong number?

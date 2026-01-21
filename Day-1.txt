@@ -1,0 +1,19 @@
+# An Abstract Data Type (ADT) is a data type that defines what operations are performed on data and what their behavior is, without specifying how the operations are implemented.
+
+# Elements of Stack ADT
+
+1. Push - IF stack size is limited, then the stack size get overflow.
+2. Pop - If stack gets empty, after that the stack gets underflow.
+3. Size - Tells the size of the stack.
+4. Empty - Tells If The stack is empty or not. And Returns Boolian value.
+5. Peev - Tells the top most value.
+
+# Algorithm is a finite, step-by-step set of well-defined instructions used to solve a problem or perform a computation.
+
+# Write the algorithm to find out the marks of the toppers
+
+1. Input marks
+2. Take first stu mark as max marks
+3. compare maxmarks and next student marks
+4. if maxmarks>next student marks ---- max marks = next student marks ------ else pass
+5. print maxmarks
