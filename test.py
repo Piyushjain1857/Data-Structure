@@ -57,14 +57,24 @@
 
 
 # decimal to binary conversion
-def binary_no_convert(n):
-    if n == 0:
-        return "0"
-    binary = ""
-    while n > 0:
-        binary = str(n % 2) + binary
-        n //= 2
-    return binary
+# def binary_no_convert(n):
+#     if n == 0:
+#         return "0"
+#     binary = ""
+#     while n > 0:
+#         binary = str(n % 2) + binary
+#         n //= 2
+#     return binary
 
-n = 12
-print(f"{n} in binary: {binary_no_convert(n)}")
+# n = 12
+# print(f"{n} in binary: {binary_no_convert(n)}")
+
+#   binary to decimal conversion
+def decimal_no(n):
+    result = 0
+    for i in n:
+        result = result * 2 + int(i)
+    return result
+
+n = "111"
+print(n, "in decimal:", decimal_no(n))
