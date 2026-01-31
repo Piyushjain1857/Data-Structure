@@ -336,14 +336,14 @@ print("Product:", pro)
 
 
 # count ooccurance of a given array
-arr_to_search = 40
-count = 0
+# arr_to_search = 40
+# count = 0
 
-for val in arrName:
-    if val == arr_to_search:
-        count += 1
+# for val in arrName:
+#     if val == arr_to_search:
+#         count += 1
 
-print(f"Occurrences of {arr_to_search}: {count}")
+# print(f"Occurrences of {arr_to_search}: {count}")
 
 # check if an array is sorted forwad, backward, or not at all
 
