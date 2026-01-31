@@ -301,13 +301,13 @@ import array as arr
 # a. remove() value search and then delete
 # b. pop() or pop(index) delete 2 ways paramete wali O(n), and if without paramete wali the delete last wali O(1)
 
-arrName = arr.array("i", [12, 6, 8, 9, 5])
-print(arrName)
+# arrName = arr.array("i", [12, 6, 8, 9, 5])
+# print(arrName)
 
 
-arrName.remove(
-    12
-)  # -->> when remove from 1 st and mid position O(n), when we remove from last position O(1) shifting karni padti h
+# arrName.remove(
+#     12
+# )  # -->> when remove from 1 st and mid position O(n), when we remove from last position O(1) shifting karni padti h
 # print(arrName)
 # arrName.pop(1)
 # print(arrName)
