@@ -317,11 +317,11 @@ print(arrName)
 
 arrName[0] = 40  # --> values update and access
 
-print(arrName)
+# print(arrName)
 
 
-for i in range(0, len(arrName), 2):
-    print(arrName[i], end=" ")
+# for i in range(0, len(arrName), 2):
+#     print(arrName[i], end=" ")
 
 
 # sum = 0
