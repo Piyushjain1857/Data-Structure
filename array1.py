@@ -310,7 +310,6 @@ arrName.remove(
 )  # -->> when remove from 1 st and mid position O(n), when we remove from last position O(1) shifting karni padti h
 print(arrName)
 arrName.pop(1)
-
 print(arrName)
 
 arrName[0] = 40  # --> values update and access
