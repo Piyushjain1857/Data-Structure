@@ -324,15 +324,15 @@ for i in range(0, len(arrName), 2):
     print(arrName[i], end=" ")
 
 
-sum = 0
-pro = 1
+# sum = 0
+# pro = 1
 
-for val in arrName:
-    sum += val
-    pro *= val
+# for val in arrName:
+#     sum += val
+#     pro *= val
 
-print("\nSum:", sum)
-print("Product:", pro)
+# print("\nSum:", sum)
+# print("Product:", pro)
 
 
 # count ooccurance of a given array
