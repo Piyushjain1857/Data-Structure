@@ -6,7 +6,7 @@ import array as arr
 # output: [2]
 
 marks = [90, 98, 55, 20, 33, 58, 100]
-# above_75 = [90, 98, 100]
+above_75 = [90, 98, 100]
 # below_40 = [55, 20,33, 58]
 
 
