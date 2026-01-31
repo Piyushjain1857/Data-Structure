@@ -1,4 +1,4 @@
-import array as arr
+# import array as arr
 
 # input list1 = ["Rohit", 18, "KR Mangalam University"]
 # output: ["KR Mangalam University", 18, "Rohit"]
