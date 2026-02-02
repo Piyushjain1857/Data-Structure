@@ -343,8 +343,8 @@ import array as arr
 
 # check if an array is sorted forwad, backward, or not at all
 
-is_sorted_forward = True
-is_sorted_backward = True
+# is_sorted_forward = True
+# is_sorted_backward = True
 # n = len(arrName)
 # for i in range(n - 1):
     # if arrName[i] > arrName[i + 1]:
