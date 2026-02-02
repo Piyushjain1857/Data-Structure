@@ -24,3 +24,12 @@
 # print("hello world")
 
 
+l=0 #largest
+l2=0 #second largest
+arr=[2,3,56,23,8,9,2]
+for i in arr:
+    if i>l:
+        l2=l
+        l=i
+    elif i>l2 and i!=l:
+        l2=i
