@@ -350,6 +350,6 @@ for i in range(n - 1):
     # if arrName[i] > arrName[i + 1]:
         is_sorted_forward = False
     # if arrName[i] < arrName[i + 1]:
-        is_sorted_backward = False
+        # is_sorted_backward = False
 
 
