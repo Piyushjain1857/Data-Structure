@@ -5,4 +5,10 @@ k=3
 
 def Rotate(arr,k):
     last = arr[-1]
+    while k>0:
+        for i in range(len(arr)-1, 0, -1):
+            arr[i] = arr[i-1]
+        arr[0] = last
+        return arr
+        k -= 1
     
