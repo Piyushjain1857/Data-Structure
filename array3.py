@@ -11,4 +11,4 @@ def Rotate(arr,k):
         arr[0] = last
         return arr
         k -= 1
-    
+    return arr
