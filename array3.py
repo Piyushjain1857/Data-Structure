@@ -4,3 +4,5 @@ arr1 = [1, 2, 3, 4, 5, 6, 7]
 k=3
 
 def Rotate(arr,k):
+    last = arr[-1]
+    
