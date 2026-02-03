@@ -15,3 +15,5 @@ import array as arr
 # print(Rotate(arr1,k))
 
 # Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.
+
+arr1 = [1, 2, 3, 4, 5, 6, 7]
