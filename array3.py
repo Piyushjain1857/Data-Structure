@@ -12,3 +12,5 @@ def Rotate(arr,k):
         return arr
         k -= 1
     return arr
+print(Rotate(arr1,k))
+
