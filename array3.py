@@ -21,7 +21,7 @@ k=3
 def rotate(nums, k):
     n = len(nums)
     k = k % n 
-    nums[:]= nums[-k:] + nums[:-k] 
+    nums= nums[-k:] + nums[:-k] 
     return nums
 
 print(rotate(arr1, k))
