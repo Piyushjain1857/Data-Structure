@@ -24,4 +24,6 @@ myLinkedList.insertAtFirstPosition(20)
 myLinkedList.insertAtFirstPosition(30)
 myLinkedList.insertAtFirstPosition(40)
 myLinkedList.insertAtFirstPosition(50)
+
+
 myLinkedList.traversal()
