@@ -19,6 +19,8 @@ class LinkedList:
             current = current.address
 
 myLinkedList = LinkedList()
+
+
 myLinkedList.insertAtFirstPosition(10)
 myLinkedList.insertAtFirstPosition(20)
 myLinkedList.insertAtFirstPosition(30)
