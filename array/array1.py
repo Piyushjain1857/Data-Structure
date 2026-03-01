@@ -351,5 +351,8 @@ import array as arr
         # is_sorted_forward = False
     # if arrName[i] < arrName[i + 1]:
         # is_sorted_backward = False
+        
+        
+        
 
 
