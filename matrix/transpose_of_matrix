@@ -1,0 +1,21 @@
+def transpose_sparse(sparse):
+    rows, cols, count = sparse[0]
+    result = []
+    result.append([cols, rows, count])
+
+    for i in range(1, len(sparse)):
+        r, c, v = sparse[i]
+        result.append([c, r, v])
+
+    # Sort by row and column
+    result[1:] = sorted(result[1:], key=lambda x: (x[0], x[1]))
+    return result
+
+matrix = [
+    [4, 4, 3],
+    [0, 1, 5],
+    [1, 3, 8],
+    [3, 2, 6]
+]
+
+print (transpose_sparse(matrix))
