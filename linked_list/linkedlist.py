@@ -38,10 +38,10 @@ class LinkedList:
         currentNode.address = new_node
 
     def traversal(self):
-        current = self.head
-        while current:
-            print(current.data, end=" -> ")
-            current = current.address
+        currentNode = self.head
+        while currentNode != None:
+            print(currentNode.data, end=" -> ")
+            currentNode = currentNode.address
 
 
 myLinkedList = LinkedList()
