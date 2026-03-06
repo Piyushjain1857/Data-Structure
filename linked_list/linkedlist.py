@@ -13,8 +13,8 @@ class LinkedList:
         new_node.address = self.head
         self.head = new_node
 
-    def insertAtLastPosition(self, myData):
-        new_node = Node(myData)
+    def insertAtLastPosition(self, new_data):
+        new_node = Node(new_data)
         if self.head == None:
             self.head = new_node
             return
@@ -23,11 +23,11 @@ class LinkedList:
             currentNode = currentNode.address
         currentNode.address = new_node
         
-    def insertAtPosition(self, position, myData):
+    def insertAtPosition(self, position, new_data):
         if position == 1:
-            self.insertAtFirstPosition(myData)
+            self.insertAtFirstPosition(new_data)
             return
-        new_node = Node(myData)
+        new_node = Node(new_data)
         currentNode = self.head
         
         # Traverse to the node just before the desired position
