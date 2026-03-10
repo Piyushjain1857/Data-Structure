@@ -37,6 +37,35 @@ class LinkedList:
         new_node.address = currentNode.address
         currentNode.address = new_node
 
+    def deleteFirst(self):
+        if self.head == None:
+            return
+        self.head = self.head.address
+
+    def deleteLast(self):
+        if self.head == None:
+            return
+        if self.head.address == None:
+            self.head = None
+            return
+        currentNode = self.head
+        while currentNode.address.address != None:
+            currentNode = currentNode.address
+        currentNode.address = None
+
+    def deleteAtPosition(self, position):
+        if self.head == None:
+            return
+        if position == 1:
+            self.deleteFirst()
+            return
+        currentNode = self.head
+        for i in range(position - 2):
+            currentNode = currentNode.address
+        if currentNode.address == None:
+            return
+        currentNode.address = currentNode.address.address
+
     def traversal(self):
         currentNode = self.head
         while currentNode != None:

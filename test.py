@@ -70,11 +70,17 @@
 # print(f"{n} in binary: {binary_no_convert(n)}")
 
 #   binary to decimal conversion
-def decimal_no(n):
-    result = 0
-    for i in n:
-        result = result * 2 + int(i)
-    return result
+# def decimal_no(n):
+#     result = 0
+#     for i in n:
+#         result = result * 2 + int(i)
+#     return result
 
-n = "111"
-print(n, "in decimal:", decimal_no(n))
+# n = "111"
+# print(n, "in decimal:", decimal_no(n))
+
+array = [1, 2, 3, 4, 5]
+k=2
+def rotate_array(arr, k):
+    k = k % len(arr)
+    return arr[-k:] + arr[:-k]
