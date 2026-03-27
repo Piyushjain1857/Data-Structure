@@ -1,7 +1,7 @@
 class Node:
-    def __init__(self, data):
+    def __init__(self, myData):
         self.prev = None
-        self.data = data
+        self.data = myData
         self.next = None
 
 
@@ -9,37 +9,35 @@ class DoublyLinkedListADT:
     def __init__(self):
         self.head = None
 
-    # Check if list is empty
-    def is_empty(self):
-        return self.head is None
-
     # Insert at beginning
     def insertAtFirstPos(self, data):
-        new_node = Node(data)
+        newNode = Node(data)
+        
+        if self.head == None:
+            self.head = newNode
 
-        if self.head is not None:
-            self.head.prev = new_node
-            new_node.next = self.head
+        else:
+            self.head.prev = newNode
+            newNode.next = self.head
 
-        self.head = new_node
 
     # Insert at end
     def insertAtLastPos(self, data):
-        new_node = Node(data)
+        newNode = Node(data)
 
-        if self.is_empty():
-            self.head = new_node
+        if self.head == None:
+            self.head = newNode
             return
 
         temp = self.head
         while temp.next:
             temp = temp.next
 
-        temp.next = new_node
-        new_node.prev = temp
+        temp.next = newNode
+        newNode.prev = temp
 
     def insertAtPos(self, data, pos):
-        new_node = Node(data)
+        newNode = Node(data)
 
         if pos == 0:
             self.insertAtFirstPos(data)
@@ -56,17 +54,17 @@ class DoublyLinkedListADT:
             print("Position out of range")
             return
 
-        new_node.next = temp.next
-        new_node.prev = temp
+        newNode.next = temp.next
+        newNode.prev = temp
 
         if temp.next:
-            temp.next.prev = new_node
+            temp.next.prev = newNode
 
-        temp.next = new_node
+        temp.next = newNode
 
     # Delete from front
     def deleteAtFirstPos(self):
-        if self.is_empty():
+        if self.head == None:
             print("List is empty")
             return
 
@@ -76,7 +74,7 @@ class DoublyLinkedListADT:
 
     # Delete from end
     def deleteAtLastPos(self):
-        if self.is_empty():
+        if self.head == None:
             print("List is empty")
             return
 
@@ -91,7 +89,7 @@ class DoublyLinkedListADT:
         temp.prev.next = None
 
     def deleteAtPos(self, pos):
-        if self.is_empty():
+        if self.head == None:
             print("List is empty")
             return
 
