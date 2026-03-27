@@ -126,7 +126,7 @@ class DoublyLinkedListADT:
         return False
 
     # Display forward
-    def display_forward(self):
+    def displayForward(self):
         temp = self.head
         while temp:
             print(temp.data, end=" <-> ")
@@ -134,7 +134,7 @@ class DoublyLinkedListADT:
         print("None")
 
     # Display backward
-    def display_backward(self):
+    def displayBackward(self):
         temp = self.head
         if temp is None:
             return
