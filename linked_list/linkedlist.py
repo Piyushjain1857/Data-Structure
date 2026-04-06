@@ -1,6 +1,6 @@
 class Node:
-    def __init__(self, mydata):
-        self.data = mydata
+    def __init__(self, myData):
+        self.data = myData
         self.address = None
 
 
@@ -8,34 +8,34 @@ class LinkedList:
     def __init__(self):
         self.head = None
 
-    def insertAtFirstPosition(self, new_data):
-        new_node = Node(new_data)
-        new_node.address = self.head
-        self.head = new_node
+    def insertAtFirstPosition(self, Data):
+        newNode = Node(Data)
+        newNode.address = self.head
+        self.head = newNode
 
-    def insertAtLastPosition(self, new_data):
-        new_node = Node(new_data)
+    def insertAtLastPosition(self, Data):
+        newNode = Node(Data)
         if self.head == None:
-            self.head = new_node
+            self.head = newNode
             return
         currentNode = self.head
         while currentNode.address != None:
             currentNode = currentNode.address
-        currentNode.address = new_node
-        
-    def insertAtPosition(self, position, new_data):
+        currentNode.address = newNode
+
+    def insertAtPosition(self, position, Data):
         if position == 1:
-            self.insertAtFirstPosition(new_data)
+            self.insertAtFirstPosition(Data)
             return
-        new_node = Node(new_data)
+        newNode = Node(Data)
         currentNode = self.head
         
         # Traverse to the node just before the desired position
         for i in range(position - 2):
             currentNode = currentNode.address
         
-        new_node.address = currentNode.address
-        currentNode.address = new_node
+        newNode.address = currentNode.address
+        currentNode.address = newNode
 
     def deleteFirst(self):
         if self.head == None:

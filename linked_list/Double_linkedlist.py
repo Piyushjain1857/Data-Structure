@@ -9,8 +9,7 @@ class DoublyLinkedListADT:
     def __init__(self):
         self.head = None
 
-    # Insert at beginning
-    def insertAtFirstPos(self, data):
+    def insertAtFirstPosition(self, data):
         newNode = Node(data)
         
         if self.head == None:
@@ -22,9 +21,7 @@ class DoublyLinkedListADT:
             newNode.next = self.head
             self.head = newNode
 
-
-    # Insert at end
-    def insertAtLastPos(self, data):
+    def insertAtLastPosition(self, data):
         newNode = Node(data)
 
         if self.head == None:
@@ -38,7 +35,7 @@ class DoublyLinkedListADT:
         currentNode.next = newNode
         newNode.prev = currentNode
 
-    def insertAtPos(self, data, pos):
+    def insertAtPosition(self, data, pos):
         newNode = Node(data)
 
         if self.head is None:
@@ -73,7 +70,7 @@ class DoublyLinkedListADT:
         currentNode.next = newNode
 
     # Delete from front
-    def deleteAtFirstPos(self):
+    def deleteAtFirstPosition(self):
         if self.head == None:
             print("List is empty")
             return
@@ -83,7 +80,7 @@ class DoublyLinkedListADT:
             self.head.prev = None
 
     # Delete from end
-    def deleteAtLastPos(self):
+    def deleteAtLastPosition(self):
         if self.head == None:
             print("List is empty")
             return
@@ -98,13 +95,13 @@ class DoublyLinkedListADT:
 
         currentNode.prev.next = None
 
-    def deleteAtPos(self, pos):
+    def deleteAtPosition(self, pos):
         if self.head == None:
             print("List is empty")
             return
 
         if pos == 0:
-            self.deleteAtFirstPos()
+            self.deleteAtFirstPosition()
             return
 
         currentNode = self.head
@@ -167,3 +164,6 @@ dl1.insertAtLastPos(30)
 dl1.insertAtLastPos(40)
 dl1.insertAtLastPos(50)
 dl1.displayForward()  # Output: 10 <-> 20 <-> 30 <-> 40 <-> 50 <-> None
+
+
+
