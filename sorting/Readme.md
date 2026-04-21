@@ -48,7 +48,7 @@ Dry Run Example:
 
 ```python
 def insertion_sort(arr):
-    n= len(arr)
+    n = len(arr)
     for i in range(1, n):
         j = i
         while j > 0 and arr[j - 1] > arr[j]:
