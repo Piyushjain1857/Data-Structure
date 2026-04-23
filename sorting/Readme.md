@@ -150,11 +150,11 @@ def quick_sort(arr):
     left = []
     right = []
 
-    for x in arr[1:]:
-        if x <= pivot:
-            left.append(x)
+    for i in arr[1:]:
+        if i <= pivot:
+            left.append(i)
         else:
-            right.append(x)
+            right.append(i)
 
     return quick_sort(left) + [pivot] + quick_sort(right)
 ```
