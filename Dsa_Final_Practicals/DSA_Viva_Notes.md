@@ -205,8 +205,9 @@ class Queue:
 ## Bubble Sort
 ```python
 def bubble_sort(arr):
-    for i in range(len(arr)):
-        for j in range(len(arr)-i-1):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
     return arr
@@ -216,12 +217,13 @@ def bubble_sort(arr):
 ## Selection Sort
 ```python
 def selection_sort(arr):
-    for i in range(len(arr)):
-        min_idx = i
-        for j in range(i+1, len(arr)):
-            if arr[j] < arr[min_idx]:
-                min_idx = j
-        arr[i], arr[min_idx] = arr[min_idx], arr[i]
+    n = len(arr)
+    for i in range(0,n-1):
+        min_index = i
+        for j in range(i + 1, n):
+            if arr[j] < arr[min_index]:
+                min_index = j
+        arr[i], arr[min_index] = arr[min_index], arr[i]
     return arr
 ```
 - **Time Complexity:** O(n²)
@@ -229,13 +231,12 @@ def selection_sort(arr):
 ## Insertion Sort
 ```python
 def insertion_sort(arr):
-    for i in range(1, len(arr)):
-        key = arr[i]
-        j = i - 1
-        while j >= 0 and key < arr[j]:
-            arr[j+1] = arr[j]
+    n = len(arr)
+    for i in range(1, n):
+        j = i
+        while j > 0 and arr[j - 1] > arr[j]:
+            arr[j], arr[j - 1] = arr[j - 1], arr[j]
             j -= 1
-        arr[j+1] = key
     return arr
 ```
 - **Time Complexity:** O(n²)
@@ -246,9 +247,9 @@ def insertion_sort(arr):
 
 ## Linear Search
 ```python
-def linear_search(arr, key):
+def linear_search(arr, target):
     for i in range(len(arr)):
-        if arr[i] == key:
+        if arr[i] == target:
             return i
     return -1
 ```
@@ -256,17 +257,18 @@ def linear_search(arr, key):
 
 ## Binary Search
 ```python
-def binary_search(arr, key):
-    left, right = 0, len(arr)-1
-
-    while left <= right:
-        mid = (left + right) // 2
-        if arr[mid] == key:
+def binary_search(arr, target):
+    low = 0
+    high = len(arr) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == target:
             return mid
-        elif arr[mid] < key:
-            left = mid + 1
+        elif arr[mid] < target:
+            low = mid + 1
         else:
-            right = mid - 1
+            high = mid - 1
+
     return -1
 ```
 - **Time Complexity:** O(log n)
@@ -280,11 +282,29 @@ def binary_search(arr, key):
 - Postorder (Left → Right → Root)
 
 ```python
-def inorder(root):
-    if root:
-        inorder(root.left)
-        print(root.data)
-        inorder(root.right)
+class Node:
+    def __init__(self, val):
+        self.data = val
+        self.left = None
+        self.right = None
+
+    def inorder(root):
+        if root:
+            inorder(root.left)
+            print(root.data, end=" ")
+            inorder(root.right)
+
+    def preorder(root):
+        if root:
+            print(root.data, end=" ")
+            preorder(root.left)
+            preorder(root.right)
+
+    def postorder(root):
+        if root:
+            postorder(root.left)
+            postorder(root.right)
+            print(root.data, end=" ")
 ```
 
 ---
