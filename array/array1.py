@@ -1,21 +1,21 @@
-import array as arr
+# import array as arr
 
-input list1 = ["Rohit", 18, "KR Mangalam University"]
-output: ["KR Mangalam University", 18, "Rohit"]
-input list2 = [2]
-output: [2]
+# input list1 = ["Rohit", 18, "KR Mangalam University"]
+# output: ["KR Mangalam University", 18, "Rohit"]
+# input list2 = [2]
+# output: [2]
 
-marks = [90, 98, 55, 20, 33, 58, 100]
-above_75 = [90, 98, 100]
-below_40 = [55, 20,33, 58]
+# marks = [90, 98, 55, 20, 33, 58, 100]
+# above_75 = [90, 98, 100]
+# below_40 = [55, 20,33, 58]
 
-list = []
+# list = []
 
-for i in range(5):
-    list1 = int(input("enter numbers:"))
-    list.append(list1)
+# for i in range(5):
+#     list1 = int(input("enter numbers:"))
+#     list.append(list1)
 
-print(list[::-1])
+# print(list[::-1])
 
 
 # marks = [90, 98, 55, 20, 33, 58, 100]
