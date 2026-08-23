@@ -3,9 +3,8 @@ class Node:
         self.prev = None
         self.data = myData
         self.next = None
+       
 
-        
-        
 class DoublyLinkedListADT:
     def __init__(self):
         self.head = None
