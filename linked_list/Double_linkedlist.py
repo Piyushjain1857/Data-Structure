@@ -2,6 +2,7 @@ class Node:
     def __init__(self, myData):
         self.prev = None
         self.data = myData
+        
         self.next = None
        
 
