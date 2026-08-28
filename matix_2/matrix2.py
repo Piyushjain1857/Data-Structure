@@ -1,5 +1,4 @@
 #upper triangular matrix
-
 rows = 4
 columns = 4
 matrix = []
