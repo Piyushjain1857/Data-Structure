@@ -1,10 +1,10 @@
-# a = 45621
-# s1=str(a)
-# l1=list(s1)
+a = 45621
+s1=str(a)
+l1=list(s1)
 
-# print(len(l1))
+print(len(l1))
 
-# print(len(list(str(a))))
+print(len(list(str(a))))
 
 
 # count no of digits
