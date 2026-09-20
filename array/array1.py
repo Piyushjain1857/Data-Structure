@@ -1,9 +1,9 @@
-import array as arr
+# import array as arr
 
-input list1 = ["Rohit", 18, "KR Mangalam University"]
-output: ["KR Mangalam University", 18, "Rohit"]
-input list2 = [2]
-output: [2]
+# input list1 = ["Rohit", 18, "KR Mangalam University"]
+# output: ["KR Mangalam University", 18, "Rohit"]
+# input list2 = [2]
+# output: [2]
 
 # marks = [90, 98, 55, 20, 33, 58, 100]
 # above_75 = [90, 98, 100]
