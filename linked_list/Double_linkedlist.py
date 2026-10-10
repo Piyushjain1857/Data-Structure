@@ -5,6 +5,9 @@ class Node:
         self.next = None
            
 
+
+
+
 class DoublyLinkedListADT:
     def __init__(self):
         self.head = None
