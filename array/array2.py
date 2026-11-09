@@ -7,6 +7,8 @@
 # arr = [9, 6, 4, 2, 3, 5, 7, 0, 1]
 # print(f" Missing number: {missing_number(arr)}")
 
+
+
 # max_num = arr[0]
 # for num in arr:
 #     if num > max_num:
